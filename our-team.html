@@ -1,129 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team</title>
-    <link rel="stylesheet" href="css.css">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!--font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
     
-    <!--Bootstrap 4-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-   
-    <style type="text/css">
-           html{
-    background: #6F42C1;
-    margin: auto, auto;
-     
-}
-.container{
-    background: #6F42C1;
-    margin-left: 255px;
-}
- 
-.our-team{
-    border-radius: 15px;
+
+    <title>Duo Security.</title>
+  </head>
+  <body>
+    <!-- Styling -->
+    <style>
+    .bg-black-origin {
+      background-color: #000000;
+    }
+    .color {
+      color: #000000;
+    }
+    .bg-purple {
+      background-color: #8E05C2;
+    }
+    .bg-abu {
+      background-color: #FAFAFA;
+    }
+    .logo-list {
+    padding: 20px 0;
     text-align: center;
-    padding: 20px 15px 30px;
-    background: #fff;
-
-}
-.our-team .pic{
-    background: #fff;
-    padding: 10px;
-    margin-bottom: 25px;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s ease 0s;
-}
-.our-team:hover .pic{
-    background: #17bebb;
-    border-radius: 50%;
-}
-.pic img{
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-.our-team .title{
-    font-weight: 600;
-    color: #2e282a;
-    text-transform: uppercase;
-    display: block;
-    font-size: 20px;
-    margin: 0 0 7px 0;
-}
-.our-team .post{
-    color: #17bebb;
-    text-transform: capitalize;
-    display: block;
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-
-    </style>
-</head>
-<body style="background: #6F42C1;">
-    <center><h1 class="ourteam">Our Team</h1></center>
-    <div class="container">
-        <div class="row">
-            
-                <!-- team section-->
-                <!--1st member-->
-            <div class="col-md-3 col-sm-6">
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="https://avatars.githubusercontent.com/u/88673568?v=4">
-                    </div>
-                    <h3 class="title">Rasyidfox</h3>
-                    <span class="post">20.83.0577</span>
-                    <h6 class="nama">Ahmad Hassan R</h6>
-
-                                <!--social icon-->
-
-                </div>
-            </div>
-
-                <!--2nd member-->
-                 
-            <div class="col-md-3 col-sm-6">
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="https://avatars.githubusercontent.com/u/94297065?s=400&u=6591b443d51d0eaf953d8200bf7b1246c86bed9f&v=4">
-                    </div>
-                    <h3 class="title">Syarivuddin9</h3>
-                    <span class="post">20.83.0584</span>
-                    <h6 class="nama">Ihsan Labib Syarifuddin</h6>
-
-                                 <!--social Icon-->
-                           
-
-                </div>
-            </div>
-
-                <!--3rd member-->
-                
-            <div class="col-md-3 col-sm-6">
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="https://th.bing.com/th/id/R.8a4db5cba785de95343a9bbe7e4d1a9f?rik=u5tUlP4KkmNkmg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fdownload_136522.png&ehk=HR0aceqmCCf5Jmp63FLA40SkDDuAl9Z1yAZra4lnTIg%3d&risl=&pid=ImgRaw&r=0">
-                    </div>
-                    <h3 class="title">Fryandika</h3>
-                    <span class="post">20.83.0553</span>
-                    <h6 class="nama">Fryandika Larung Samudra</h6>
-                                
-                                 <!--social icon-->
-               
-                </div>
-            </div>
-
-                </div>
-            </div>
+    border-bottom: 1px solid #ddd;
+    }
+    .logo-list img {
+        display: inline-block;
+        max-width: 85%;
+        padding: 15px 0;
+        transition: all 0.3s ease-in-out;
+        -webkit-filter: grayscale(100);
+        -moz-filter: grayscale(100);
+        filter: grayscale(100);
+    }
+    .logo-list img:hover {
+        filter: none;
+        transform: scale(1.2);
+        -webkit-filter: none;
+        -moz-filter: none;
+    }
     
+    </style>
+    <!-- Akhir Styling -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black-origin">
+        <div class="container">
+        <a class="navbar-brand" href="index.html">Duo Security.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link" href="index.html">About</a>
+            <a class="nav-item nav-link" href="index.html">Contact</a>
+            <a class="nav-item nav-link" href="index.html">Our Partner</a>
+            <a class="nav-item nav-link active" href="our-team.html">Our Team</a>
+            <a class="nav-item nav-link" href="sign-up.html">Sign Up</a>
+            <a class="btn btn-outline-warning" href="sign-in.html" data-bs-target="#signin">Sign In</a>
+              
+          </div>
         </div>
-    </div>
-</body>
+      </nav>
+    <!-- Akhir Navbar -->
+    <!-- Jumbotron -->
+    <section class="bg-purple text-light text-center text-sm-start p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md align-self-center">
+            <h1>Duo <span class="color">Security.</span></h1>
+            <hr>
+            <p>Protect your workforce with simple, powerful access security.</p>
+            <p class="color">We're Duo. Our modern access security is designed to safeguard all users, devices, and applications — so you can stay focused on what you do best.</p>
+            <button class="btn btn-outline-warning">Join with Us!</button>
+          </div>
+          <img src="assets/img/security-img.svg" class="img-fluid w-50 d-none d-sm-block" alt="Security">
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Jumbotron -->
+  <!-- Visi-Misi -->
+  <section class="p-5 text-dark bg-light">
+    <div class="container text-center mb-4">
+        <div class="row">
+          <h4>Visi-Misi</h4>
+          <br>
+          <br>
+          <div class="col-lg-6">
+            <p class="text-secondary">
+                What is Lorem Ipsum?
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                
+                Why do we use it?
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).                
+            </p>
+          </div>
+          <div class="col-lg-6">
+           <img src="assets/img/geek.gif" width=500 height=400 alt="Visi-Misi">
+            </p>
+          </div>
+        </div>
+      </div>
+      
+
+  </section>
+  <!-- Akhir Visi-Misi -->
+  <!-- Our Team -->
+  <section class="p-5 text-light bg-dark">
+    <div class="container text-center">
+      <h3 class="mb-4">Our Team</h3>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+              <div class="card-box">
+                  <div class="card-thumbnail">
+                      <img src="assets/img/our-team-1.jfif" class="img-fluid rounded-circle" width="200" alt="Secure">
+                  </div>
+                  <br>
+                  <h5 class="mb-3">Albert Camus</h5>
+                  <p class="text-secondary">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+              <div class="card-box">
+                  <div class="card-thumbnail">
+                      <img src="assets/img/our-team-2.jfif" class="img-fluid rounded-circle" width="200" alt="Secure">
+                  </div>
+                  <br>
+                  <h5 class="mb-3">Yosef Atthari</h5>
+                  <p class="text-secondary">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+              <div class="card-box">
+                  <div class="card-thumbnail">
+                      <img src="assets/img/our-team-3.jfif" class="img-fluid rounded-circle" width="200" alt="Secure">
+                  </div>
+                  <br>
+                  <h5 class="mb-3">Carlos Anggelie</h5>
+                  <p class="text-secondary">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Akhir Our Team -->
+  <!-- Footer -->
+  <footer class="bg-purple text-center text-light text-lg-start p-5">
+  <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Duo Security.
+            </h6>
+            <p>
+                We're Duo. Our modern access security is designed to safeguard all users, devices, and applications — so you can stay focused on what you do best.
+            </p>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-decoration-none text-light">Remote Access</a>
+            </p>
+            <p>
+              <a href="#!" class="text-decoration-none text-light">Multi-Factor Authenticator (MFA)</a>
+            </p>
+            <p>
+              <a href="#!" class="text-decoration-none text-light">Single Sign-On (SSO)</a>
+            </p>
+            <p>
+              <a href="#!" class="text-decoration-none text-light">Device trust</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Help
+            </h6>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    
+    <!-- Section: Links  -->
+    <!-- Copyright -->
+    <hr>
+    <p class="lead text-center">Copyright Duo Security. &copy;2021</p>
+    </footer>
+    <!-- Copyright T -->
+    <!-- Akhir Footer -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
